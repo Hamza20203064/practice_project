@@ -6,7 +6,7 @@ const { env } = require('process')
 
 
 
-const PORT = 8080 || env.PORT
+const PORT = 8080
 app.listen(PORT, ()=>{
     console.log(`Server connected sucessfully at PORT: ${PORT}`);
     
