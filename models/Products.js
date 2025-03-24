@@ -26,13 +26,31 @@ price : {
     min : 0,
     require : true
 },
+quantity : {
+    type : String,
+    min : 0,
+    require : true
+},
 discription : {
     type : String,
     trim : true,
-    require : true
 }
+// avgRating: {
+//     type: Number,
+//     default:0 
+// },
+// author:{
+//     type:mongoose.Schema.Types.ObjectId,
+//     ref:'User'
+// },
+// reviews: [
+//     {
+//         type: mongoose.Schema.Types.ObjectId,
+//         ref:'Review'
+//     }
+
 })
 
 // mongoose.model(modelName, schema)
-let Product = mongoose.model(Products, schema)
+let Product = mongoose.model(Products, productSchema)
 module.exports = Product;
