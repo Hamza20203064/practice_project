@@ -7,9 +7,9 @@ const productSchema = new mongoose.Schema({
 // rating:
 // quantity:
 // expiry date:
-// production date:
+// packaging date:
 // price:
-// pictures:
+// image:
 
 name:{
     type : String,
